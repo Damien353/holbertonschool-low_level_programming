@@ -7,15 +7,14 @@
  */
 int main(void)
 {
-	char lower[i] = "abcdefghijklmnopqrstuvwxyz";
-	char upper[i] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	char lower = "abcdefghijklmnopqrstuvwxyz";
+	char upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	for (lower[i] = 0; lower[i] < 26; lower[i]++)
-	putchar (lower[i]);
+	for (lower = 'a'; lower < 'z'; lower++)
+	putchar (lower);
 
-	for (upper[i] = 0; upper[i] < 26; upper[i]++)
-	putchar (upper[i]);
+	for (upper = 'A'; upper < 'Z'; upper++)
+	putchar (upper);
 
 	putchar ('\n');
 	return (0);
