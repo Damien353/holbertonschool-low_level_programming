@@ -9,13 +9,12 @@ int main(void)
 {
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
 
-	for (int i = 0; i < 26; i++)
-	putchar (lower[i]);
+	for (lower[] = 0; lower[] < 26; lower[]++)
+	putchar (lower[]);
 
-	for (int i = 0; i < 26; i++)
-	putchar (upper[i]);
+	for (upper[] = 0; upper[] < 26; upper[]++)
+	putchar (upper[]);
 
 	putchar ('\n');
 	return (0);
