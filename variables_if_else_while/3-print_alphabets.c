@@ -9,6 +9,7 @@ int main(void)
 {
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
 	for (int i = 0; i < 26; i++)
 	putchar (lower[i]);
