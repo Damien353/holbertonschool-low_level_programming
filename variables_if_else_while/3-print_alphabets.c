@@ -13,8 +13,10 @@ int main(void)
 
 	for (int i = 0; i < 26; i++)
 	putchar (lower[i]);
-	putchar (upper[i]);
-	putchar ('\n');
 
+	for for (int i = 0; i < 26; i++)
+	putchar (upper[i]);
+
+	putchar ('\n');
 	return (0);
 }	
