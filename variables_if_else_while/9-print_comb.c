@@ -14,6 +14,7 @@ int main(void)
 	if (singleD != 8 || singleD != 9)
 {
 	putchar(',');
+	putchar(' ');
 }
 }
 	putchar('\n');
