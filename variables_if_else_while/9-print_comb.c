@@ -8,10 +8,10 @@ int main(void)
 {
 	int singleD;
 
-	for (singleD = 0; singleD <= 9; singleD++)
+	for (singleD = 0; singleD <= 10; singleD++)
 {
 		putchar(singleD + '0');
-	if (singleD != 8 || singleD !=9)
+	if (singleD != 8 || singleD != 9)
 {
 	putchar(',');
 	putchar(' ');
