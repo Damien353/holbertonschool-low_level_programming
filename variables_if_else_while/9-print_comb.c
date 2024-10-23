@@ -11,7 +11,7 @@ int main(void)
 	for (singleD = 0; singleD <= 9; singleD++)
 {
 		putchar(singleD + '0');
-	if (singleD != 7 || singleD != 8)
+	if (singleD != 8 || singleD !=9)
 {
 	putchar(',');
 	putchar(' ');
