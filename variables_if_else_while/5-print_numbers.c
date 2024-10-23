@@ -10,7 +10,7 @@ int main(void)
 
 	for (singleD = 0; singleD <= 9; singleD++)
 
-{	putchar (singleD);
+{	printf("%dsingleD\n");
 }
 	putchar ('\n');
 	return (0);
