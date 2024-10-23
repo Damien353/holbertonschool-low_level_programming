@@ -6,16 +6,14 @@
  */
 int main(void)
 {
-	int singleD, singleD2;
+	int singleD;
 
 	for (singleD = 0; singleD <= 9; singleD++)
 {
-	for (singleD2 = singleD + 1; singleD2 <= 9; singleD2++)
-{		putchar(singleD + '0');
-		putchar(singleD2 + '0');
-	if (singleD != 8 || singleD2 != 9)
-{		putchar(',');
-}
+		putchar(singleD + '0');
+	if (singleD != 8 || singleD != 9)
+{
+	putchar(',');
 }
 }
 	putchar('\n');
