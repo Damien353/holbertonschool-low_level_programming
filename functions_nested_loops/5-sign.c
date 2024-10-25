@@ -2,7 +2,7 @@
 /**
  *print_sign - entry point
  *@n : patata
- *Return : 0 is success
+ *Return: 0 is success
  */
 int print_sign(int n)
 {
