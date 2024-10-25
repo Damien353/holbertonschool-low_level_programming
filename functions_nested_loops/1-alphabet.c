@@ -5,8 +5,7 @@
  */
 void print_alphabet(void)
 {
-	int i;
-	char *alphabet = "abcdefghijklmnopqrstuvwxyz\n";
+	char i;
 
 	for (i = 'a'; i <= 'z'; i++);
 		print_alphabet(alphabet[i]);
