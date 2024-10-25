@@ -3,7 +3,7 @@
  *main - entry point
  *Return: 0 is success
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 	char *alphabet = "abcdefghijklmnopqrstuvwxyz\n";
