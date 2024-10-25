@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *int _abs - entry point
+ *_abs - entry point
  *@r: ezrgzefg
  *Return: 0 is success
  */
