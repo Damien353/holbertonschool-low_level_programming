@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_islower - entry point
+ *_isalpha - entry point
  *@c: lowercase or upper or letter character
  *Return: 0 = success
  */
