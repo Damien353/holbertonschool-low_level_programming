@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *more_numbers - entry point
- *@i: nombres
- *@n: lignes
+ *
+ *
  *Return: 0 success
  */
 void more_numbers(void)
