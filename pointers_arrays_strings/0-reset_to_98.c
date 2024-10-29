@@ -1,12 +1,10 @@
 #include "main.h"
 /**
  *reset_to_98 - entry point
- *@n: fev
+ *@*n: fev
  *Return: 0 success
  */
 void reset_to_98(int *n)
 {
-	int *n = 98;
-
-	return 0;
+	*n = 98;
 }
