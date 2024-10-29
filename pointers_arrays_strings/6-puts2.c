@@ -7,6 +7,7 @@
 void puts2(char *str)
 {
 	int charcount = 0;
+
 	while (str[charcount] != '\0')
 {
 		if (charcount % 2 == 0)
