@@ -20,7 +20,7 @@ int _atoi(char *s)
 {
 	if (s[index] == '-')
 {
-	sign *= -1;
+	sign *= (-1);
 }
 	index++;
 }
