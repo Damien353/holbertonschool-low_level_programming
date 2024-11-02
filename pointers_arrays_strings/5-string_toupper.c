@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *string_toupper - entry point
  *
@@ -7,6 +8,7 @@
 char *string_toupper(char *)
 {
 	char *original = str;
+	char str;
 
 	while (*str)
 	{
