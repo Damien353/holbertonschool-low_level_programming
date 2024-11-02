@@ -2,7 +2,7 @@
 #include <stddef.h>
 /**
  *string_toupper - entry point
- *
+ *@str: string
  *Return: 0 success
  */
 char *string_toupper(char *str)
