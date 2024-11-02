@@ -5,9 +5,8 @@
  *
  *Return: 0 success
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	char *str;
 	char *original = str;
 
 
