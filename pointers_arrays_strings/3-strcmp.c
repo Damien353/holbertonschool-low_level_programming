@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- *_strcomp - entry point
+ *_strcmp - entry point
  *@s1: string
  *@s2: string
  *Return: 0 success
