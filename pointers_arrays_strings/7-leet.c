@@ -6,7 +6,7 @@
  */
 char *leet(char *str)
 {
-	char leet_chars[] = "4433007711";
+	char leet_chars[] = "43071";
 	char original_chars[] = "aeotlAEOTL";
 	char *ptr = str;
 	int i;
@@ -17,7 +17,7 @@ char *leet(char *str)
 	{
 		if (*ptr == original_chars[i])
 		{
-			*ptr = leet_chars[i];
+			*ptr = leet_chars[i % 5];
 			break;
 		}
 	}
