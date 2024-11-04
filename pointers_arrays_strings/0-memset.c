@@ -15,5 +15,5 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		*ptr++ = b; //remplit le byte courant avec b et incremente le pointeur
 	}
-	return s; // retourne le pointeur original
+	return (s); // retourne le pointeur original
 }
