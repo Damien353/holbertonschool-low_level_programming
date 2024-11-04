@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *_memcpy - entry point
  *@dest: memory area
