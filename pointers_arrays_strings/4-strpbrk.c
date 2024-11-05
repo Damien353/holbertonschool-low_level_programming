@@ -2,8 +2,8 @@
 #include <stddef.h>
 /**
  *_strpbrk - entry point
- *@s:
- *@accept:
+ *@s: string
+ *@accept: string
  *Return: 0 success
  */
 char *_strpbrk(char *s, char *accept)
