@@ -10,6 +10,5 @@ int _strlen_recursion(char *s)
 	{
 		return (0); /*longueur d'une chaine vide est 0*/
 	}
-	return (1 + _strlen_recursion(s + 1)); /*compte le caractere actuel + longueur du reste de la chaine
+	return (1 + _strlen_recursion(s + 1)); /*compte le caractere actuel + longueur du reste de la chaine*/
 }
-
