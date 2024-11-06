@@ -6,11 +6,11 @@
  */
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
+	if (*s == '\0') /*condition si on atteint la fin de la chaine*/
 	{
-		_putchar('\n');
+		_putchar('\n'); /*afficher une nouvelle ligne*/
 		return;
 	}
-	_putchar(*s);
-	_puts_recursion(s + 1);
+	_putchar(*s); /*affiche le caractere courant*/
+	_puts_recursion(s + 1); /*appel recursif avec le prochain caractere*/
 }
