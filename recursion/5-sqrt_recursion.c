@@ -8,5 +8,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	return (-1); /*la racine carree n'est pas definie dans les entiers*/
-	return (_sqtr_helper(n, 0));
+	return (_sqtr_recursion(n, 0));
 }
