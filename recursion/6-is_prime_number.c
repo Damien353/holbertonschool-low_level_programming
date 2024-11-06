@@ -21,7 +21,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	for (i = 3,; i <= sqrt(n); i += 2) /*teste les diviseurs de 3 jusqu'a sqrt(n)*/
+	for (i = 3; i <= n / 2; i += 2) /*teste les diviseurs de 3 jusqu'a n / 2*/
 	{
 		if (n % i == 0)
 		{
