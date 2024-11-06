@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 /**
  *is_pirme_number - return 1 in the input
  *@n: number
