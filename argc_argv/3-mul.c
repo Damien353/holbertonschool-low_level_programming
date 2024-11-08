@@ -12,15 +12,15 @@ int main(int argc, char *argv[])
 	int num2;
 	int result;
 
-	if (argc != 3)
+	if (argc != 3) /*verifie si le programme a recu exactement 2 arguments*/
 {
 	printf("Error\n");
 	return (1);
-}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
+}	/*convertir les arguments en entiers*/
+	num1 = atoi(argv[1]); /*convertit le premier*/
+	num2 = atoi(argv[2]); /*convertit le second*/
+	result = num1 * num2; /*calcul le produit*/
 
-	printf("%d\n", result);
+	printf("%d\n", result); /*affiche le resultat*/
 	return (0);
 }
