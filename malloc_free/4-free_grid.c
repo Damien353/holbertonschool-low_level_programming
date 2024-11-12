@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  *free_grid - frees 2 dimensional grid
- *@grid: 
- *@height:
+ *@grid: valeur
+ *@height: array
  *Return: 0 success
  */
 void free_grid(int **grid, int height)
@@ -12,9 +12,9 @@ void free_grid(int **grid, int height)
 
 	if (grid == NULL || height <= 0)
 		return;
-	for (i = 0; i < height; i++)
+	for (i = 0; i < height; i++) /*libere chaque ligne*/
 	{
 		free(grid[i]);
 	}
-	free(grid);
+	free(grid); /*libere le tableau de pointeurs vers lignes*/
 }
