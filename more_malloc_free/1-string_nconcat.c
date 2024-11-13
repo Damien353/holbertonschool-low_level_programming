@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s1 = "";
 	if (s2 == NULL)
 	s2 = "";
-	
+
 	while (s1[len_s1] != '\0') /*calcul la longueur s1*/
 		len_s1++;
 	while (s2[len_s2] != '\0') /*pour s2*/
@@ -32,12 +32,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (result == NULL)
 		return (NULL);
 
-	while (i < len_s1) { /*copie s1 dans result*/
+	while (i < len_s1)
+	{/*copie s1 dans result*/
 	result[i] = s1[i];
 	i++;
 	}
 
-	while (j < n) { /*copie premiers n caracteres de s2 dans result*/
+	while (j < n)
+	{/*copie premiers n caracteres de s2 dans result*/
 		result[i] = s2[j];
 		i++;
 		j++;
