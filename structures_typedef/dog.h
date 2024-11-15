@@ -1,9 +1,10 @@
 #ifndef INV_DOG_H
 #define INV_DOG_H
-/*
- * dog - entry point
- *
- * Return: 0 is success
+/**
+ *struct dog - entry point
+ *@name: dog name
+ *@age: dog age
+ *@owner: dog propri
  */
 struct dog
 {
@@ -13,4 +14,3 @@ struct dog
 };
 
 #endif
-
