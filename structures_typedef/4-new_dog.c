@@ -18,25 +18,37 @@ int _strlen(char *s)
 	return (length);
 }
 /**
- *_strncpy - entry point
- *@dest: string
- *@src: string
- *@n: caractere
+ *_strdup - return pointer to new allocated memory
+ *@str: string
  *Return: 0 success
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strdup(char *str)
 {
-	int i;
+	char *dup_str;
+	unsigned int len, i;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	if (str == NULL)
 	{
-		dest[i] = src[i];
+		return (NULL);
 	}
-	for (; i < n; i++)
+	len = 0;
+	while (str[len] != '\0') /*calculer la longueur de len*/
 	{
-		dest[i] = '\0';
+		len++;
 	}
-	return (dest);
+	dup_str = (char *)malloc((len + 1) * sizeof(char)); /*allouer memoire pour nouvelle chaine y compris null*/
+
+	if (dup_str == NULL)
+	{
+		return (NULL);
+	}
+	/*recopier la memoire la chaine caractere par caractere*/
+	for (i = 0; i < len; i++)
+	{
+		dup_str[i] = str[i];
+	}
+	dup_str[len] = '\0';
+	return (dup_str);
 }
 /**
  *new_dog - creates a new dog
@@ -57,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d);
 		return (NULL);
 	}
-	_strncpy(d->name, name);
+	d->name = _strdup(name);
 	d->owner = malloc(_strlen(owner) + 1);
 	if (d->owner == NULL)
 	{
@@ -65,7 +77,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d);
 		return (NULL);
 	}
-	_strncpy(d->owner, owner);
+	d->owner = _strdup(owner);
 	d->age = age;
 	return (d);
 }
