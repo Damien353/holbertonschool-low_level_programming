@@ -25,3 +25,4 @@ char *create_array(unsigned int size, char c)
 		array[i] = c;
 	return (array); /*retourner le pointeur vers le tableau alloue et initialise*/
 }
+
