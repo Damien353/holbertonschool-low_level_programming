@@ -10,13 +10,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;/*pour parcourir le tableau*/
 
-	if (size <= 0)/*verifier si size est valide*/
+	if (size < 1 || array == NULL || cmp == NULL)/*verifier si size est valide*/
 	{
 		return (-1);
 	}
 	for (i = 0; i < size; i++)/*on parcourt le tableau*/
 	{
-		if(cmp(array[i]) != 0)/*on utilise fonction cmp pour comparer valeur*/
+		if (cmp(array[i]) != 0)/*on utilise fonction cmp pour comparer valeur*/
 		{
 			return (i);/*retourne l'indice si cmp retourne pas 0*/
 		}
