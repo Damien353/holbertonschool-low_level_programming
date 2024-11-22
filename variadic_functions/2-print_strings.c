@@ -10,7 +10,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list args;
 	unsigned int i;
 	char *str;
-	
+
 	/*initialise va_list sur le premier argument*/
 	va_start(args, n);
 	/*loop sur les arguments et print*/
