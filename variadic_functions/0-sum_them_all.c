@@ -11,8 +11,9 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 
 	va_list args; /*initialise va_list pour acceder aux arguments variadic*/
+
 	va_start(args, n);
-	
+
 	if (n == 0)
 		return (0);
 
