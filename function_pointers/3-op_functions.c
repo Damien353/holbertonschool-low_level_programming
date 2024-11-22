@@ -1,30 +1,69 @@
+#include <stdio.h>
 #include"calc.h"
 /**
- *get_op_func - select correct function to perform operation asked
- *@s: operator passed as argument
- *
- *Return: result operation
+ * op_add - Returns the sum of two integers
+ * @a: first integer
+ * @b: second integer
+ * 
+ * Return: sum of a and b
  */
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-op_t ops[] = {
-        {"+", op_add},
-        {"-", op_sub},
-        {"*", op_mul},
-        {"/", op_div},
-        {"%", op_mod},
-        {NULL, NULL}
-    };
- 
-	int i = 0;
+	return (a + b);
+}
 
-	while (i < 5) /*pour prendre les 5 operations en compte + NULL*/
+/**
+ * op_sub - Returns the difference of two integers
+ * @a: first integer
+ * @b: second integer
+ * 
+ * Return: difference of a and b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - Returns the product of two integers
+ * @a: first integer
+ * @b: second integer
+ * 
+ * Return: product of a and b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - Returns the result of the division of a by b
+ * @a: first integer (numerator)
+ * @b: second integer (denominator)
+ * 
+ * Return: result of a / b
+ */
+int op_div(int a, int b)
+{
+	if (b == 0)
 	{
-		if (strcmp(s, ops[i].op) == 0) /*comparer les strings de s*/
+	return (0);
+	}
+	return (a / b);
+}
+
+/**
+ * op_mod - Returns the remainder of the division of a by b
+ * @a: first integer (numerator)
+ * @b: second integer (denominator)
+ * 
+ * Return: remainder of a / b
+ */
+int op_mod(int a, int b)
+{
+	if (b == 0)
 	{
-		return (ops[i].f);
+        return (0);
 	}
-		i++;
-	}
-	return (NULL);
+	return (a % b);
 }
