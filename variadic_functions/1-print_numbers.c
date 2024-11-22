@@ -16,7 +16,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(args, int)); /*print le nombre actuel*/
 
-		if (separator != NULL && i < n - 1) /*print separator si pas dernier nombre et non NULL*/
+		/*print separator si pas dernier nombre et non NULL*/
+		if (separator != NULL && i < n - 1)
 		{
 			printf("%s", separator);
 		}
