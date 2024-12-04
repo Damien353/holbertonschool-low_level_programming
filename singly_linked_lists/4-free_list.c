@@ -12,6 +12,11 @@ void free_list(list_t *head)
 	{
 		current_node = head;
 		head = head->next;
+		
+		if (current_node->str != NULL)
+		{
+			free(current_node->str);
+		}
 		free(current_node->str);/*libere la chaine str*/
 		free(current_node);/*libere le noeud lui-meme*/
 	}
