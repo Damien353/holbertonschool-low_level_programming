@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	new_node->n = n;
 	new_node->next = NULL;/*prochain noeud sera null(dernier de la liste)*/
 	new_node->prev = NULL;/*prev sera null si premier noeud*/
-	
+
 	/*si liste est vide, nouveau noeud devient head*/
 	if (*head == NULL)
 	{
