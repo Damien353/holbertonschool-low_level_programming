@@ -26,7 +26,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	/*trouver dernier noeud de la liste*/
 	last_node = *head;
-	while (last_node != NULL)
+	while (last_node->next != NULL)
 	{
 		last_node = last_node->next;
 	}
