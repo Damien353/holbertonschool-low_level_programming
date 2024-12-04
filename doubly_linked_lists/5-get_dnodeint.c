@@ -15,11 +15,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	while (current_node != NULL)
 	{
 	if (i == index)/*Si on a atteint l'index voulu*/
-	return current_node;/*Retourner le noeud a cet index*/
+	return (current_node);/*Retourner le noeud a cet index*/
 	current_node = current_node->next;/*Passer au noeud suivant*/
 	i++;
 	}
 
 	/*Si on sort de la boucle sans avoir trouve l'index, retourner NULL*/
-	return NULL;
+	return (NULL);
 }
