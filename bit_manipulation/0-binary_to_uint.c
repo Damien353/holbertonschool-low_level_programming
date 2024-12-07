@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0;
 
 	if (b == NULL)
-		retun (0);
+		return (0);
 	while (b[i] != '\0')/*parcourir la chaine*/
 	{
 		/*si caractere autre que 0 ou 1 est trouve, return 0*/
