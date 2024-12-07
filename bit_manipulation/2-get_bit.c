@@ -9,7 +9,7 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int mask;/* Declaration du masque */
-    
+
 	if (index > 63)
 	/*Si indice est invalide(au dela de la taille d'un unsigned long int)*/
 	return (-1);
